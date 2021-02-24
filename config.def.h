@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Source Code Pro:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -94,26 +94,27 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
+/* https://gitlab.com/protesilaos/tempus-themes-urxvt/tempus_spring.Xresources */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"#283a37",		/* black */
+	"#ff855a",		/* red3 */
+	"#5cbc4d",		/* green3 */
+	"#a6af1a",		/* yellow3 */
+	"#39b6ce",		/* blue2 */
+	"#e69092",		/* magenta3 */
+	"#36bd84",		/* cyan3 */
+	"#96aca7",		/* gray90 */
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"#2a423d",		/* gray50 */
+	"#e19900",		/* red */
+	"#6dbb0d",		/* green */
+	"#c5a443",		/* yellow */
+	"#70ade2",		/* #5c5cff */
+	"#d091db",		/* magenta */
+	"#3cbaa6",		/* cyan */
+	"#b5b8b7",		/* white */
 
 	[255] = 0,
 
